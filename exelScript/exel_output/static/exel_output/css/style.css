@@ -1,0 +1,13 @@
+.container {
+    margin: 30px;
+}
+h1 {
+    color:blue;
+}
+btn_container{
+    display: flex;
+    margin:30px;
+    padding:300px;
+    justify-content: space-between;
+
+}

@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="static/exel_output/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+<div class="btn_container">
+    <button type="button" value="Download" > <a href="{% url 'download_file' %}">Скачати файл</a></button>
+    </div>
+<div class="btn_container">
+    <button type="button"> <a href="{% url 'home' %}">Натисніть щоб завершити скачування</a></button>
+    </div>
+    </div>
+</body>
+</html>

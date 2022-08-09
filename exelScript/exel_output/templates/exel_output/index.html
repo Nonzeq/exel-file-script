@@ -1,0 +1,37 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/exel_output/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<h1><strong>Додати файли</strong></h1> <strong><a href="{% url 'exemple' %}" >Приклад ексель файлу з бази данних (УкрСклад)</a></strong></div>
+<form action="{% url 'home'%}" method="post" , enctype="multipart/form-data"> <!!! обязательное поле для работы с
+    файлами enctype="multipart/form-data" !!!>
+    {% csrf_token %}
+    <div class="container">
+        <div class="form-error"></div>
+        <div class="btn_container">
+            <p>Файл з бази данних магазину </p>
+            <input type="file" placeholder="File number 1" name="First">
+        </div>
+        <div class="btn_container">
+            <p>Файл з Прому</p>
+            <input type="file" placeholder="File number 2" name="Second">
+        </div>
+    </div>
+    <button type="submit" value="Upload">Обробити</button>
+
+
+    <h1>Після обробки файлів вас перенесе на сторінку для скачування</h1>
+<!--    <img src="media/images/priklad.png">-->
+
+</form>
+</body>
+</html>
