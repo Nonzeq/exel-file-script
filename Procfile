@@ -1,1 +1,1 @@
-web: gunicorn exelScript.exelScript.wsgi --log-file -
+web: gunicorn --pythonpath exelScript exelScript.wsgi --log-file -
